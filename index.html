@@ -10,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0e131b;
-      --panel:#151c28;
-      --panel-2:#192230;
-      --text:#eef2f7;
-      --muted:#b8c2d6;
-      --brand:#4fc3a1;
-      --brand-2:#7fe4c2;
-      --accent:#7cc0ff;
-      --shadow: 0 10px 30px rgba(0,0,0,.3);
+      /* THEME tuned to your gold/black logo */
+      --bg:#111214;           /* page background */
+      --panel:#171a1f;        /* card background */
+      --panel-2:#1c2026;      /* softer panel */
+      --text:#faf7f2;         /* warm cream text */
+      --muted:#d7cfc4;        /* muted sand */
+      --brand:#F5C249;        /* primary gold */
+      --brand-2:#FFE29A;      /* light gold */
+      --accent:#000000;       /* deep black accents */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 18px;
       --radius-lg: 28px;
       --maxw: 1100px;
@@ -30,20 +31,20 @@
     img{max-width:100%;display:block;border-radius:12px}
     .container{max-width:var(--maxw);margin:0 auto;padding:28px}
     .btn{display:inline-block;padding:14px 20px;border-radius:14px;font-weight:700;letter-spacing:.2px}
-    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#07120c;box-shadow:var(--shadow)}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#3a2a00;box-shadow:var(--shadow)}
     .btn-outline{border:2px solid var(--brand);color:var(--brand)}
-    .chip{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(79,195,161,.15);color:var(--brand-2);font-weight:700}
-    header.nav{position:sticky;top:0;backdrop-filter: blur(8px);background:rgba(14,19,27,.7);z-index:10;border-bottom:1px solid rgba(255,255,255,.06)}
+    .chip{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(245,194,73,.18);color:var(--brand-2);font-weight:700}
+    header.nav{position:sticky;top:0;backdrop-filter: blur(8px);background:rgba(17,18,20,.7);z-index:10;border-bottom:1px solid rgba(255,255,255,.06)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand .logo{width:34px;height:34px;border-radius:10px;background:radial-gradient(120px 80px at 30% 30%,var(--brand-2),var(--brand));box-shadow:0 0 0 3px rgba(127,220,162,.25)}
     .brand h1{font-size:18px;margin:0;letter-spacing:.5px}
+    .logo-img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 3px rgba(245,194,73,.25);object-fit:cover}
     nav a{margin-left:18px;color:var(--muted)}
     nav a:hover{color:var(--text)}
 
     .hero{padding:72px 28px 42px}
     .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .hero-card{background:linear-gradient(180deg,rgba(79,195,161,.12),rgba(124,192,255,.10));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow)}
+    .hero-card{background:linear-gradient(180deg,rgba(245,194,73,.12),rgba(0,0,0,.12));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow)}
     .hero h2{font-size:44px;line-height:1.05;margin:.2em 0 .4em}
     .hero p{color:var(--muted);font-size:18px}
     .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
@@ -59,7 +60,7 @@
   <header class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <img class="logo-img" src="logo.png" alt="Unified Haven logo" />
         <h1 id="top">Unified Haven</h1>
       </div>
       <nav aria-label="Primary">
