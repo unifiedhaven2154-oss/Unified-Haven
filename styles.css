@@ -91,6 +91,10 @@ div.brand h1 {
     color: var(--muted)
 }
 
+a#logo-home:hover {
+    text-decoration: none;
+}
+
 header.nav {
     position: sticky;
     top: 0;
