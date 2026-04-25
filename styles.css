@@ -267,3 +267,23 @@ header.nav nav a {
 header.nav nav a:hover {
     color: #8a5a00;
 }
+
+/* FINAL NAVBAR TEXT SIZE + COLOR */
+header.nav .brand h1 {
+    color: #000000 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+}
+
+header.nav nav a {
+    margin-left: 18px !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: color 0.2s ease !important;
+}
+
+header.nav nav a:hover {
+    color: #8a5a00 !important;
+}
