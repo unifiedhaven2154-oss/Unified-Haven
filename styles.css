@@ -84,7 +84,7 @@ img {
 
 div.brand h1 {
     font-size: xx-large;
-    color: var(--muted)
+    color: #000000;
 }
 
 a#logo-home:hover {
@@ -127,7 +127,11 @@ header.nav {
 
 nav a {
     margin-left: 18px;
-    color: #374151;
+    color: #000000;
+}
+
+nav a:hover {
+    color: var(--brand);
 }
 
 nav a:hover {
