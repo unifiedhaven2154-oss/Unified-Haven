@@ -1,7 +1,7 @@
 :root {
     /* LIGHT THEME (clean + nonprofit feel) */
 
-    --bg: #f9fafb;
+    --bg: #fff8e1;
     --panel: #ffffff;
     --panel-2: #f4f6f8;
 
@@ -74,14 +74,12 @@ img {
 }
 
 .chip {
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(245, 194, 73, .18);
-    color: var(--brand-2);
-    font-weight: 700
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #3a2a00;
+    font-weight: 700;
 }
 
 div.brand h1 {
