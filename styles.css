@@ -254,8 +254,16 @@ header.nav nav a:hover {
     color: #f5c249 !important;
 }
 
-/* FORCE ALL NAVBAR TEXT TO TRUE BLACK */
-header.nav,
-header.nav * {
-    color: #000000 !important;
+/* Clean navbar text styling */
+header.nav .brand h1 {
+    color: #000000;
+}
+
+header.nav nav a {
+    color: #000000;
+    transition: color 0.2s ease;
+}
+
+header.nav nav a:hover {
+    color: #8a5a00;
 }
