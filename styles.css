@@ -243,3 +243,13 @@ header.nav .nav-inner {
 header.nav {
     border-bottom: 1px solid rgba(0,0,0,0.08) !important;
 }
+
+/* FORCE NAVBAR TEXT + HOVER EFFECT */
+header.nav nav a {
+    color: #000000 !important;
+    transition: color 0.2s ease;
+}
+
+header.nav nav a:hover {
+    color: #f5c249 !important;
+}
