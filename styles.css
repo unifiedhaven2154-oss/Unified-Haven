@@ -183,7 +183,7 @@ section h3 {
 
 footer {
     padding: 36px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.06)
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     color: var(--muted)
 }
 
@@ -225,8 +225,17 @@ header.nav {
     border-bottom: 1px solid rgba(0,0,0,0.08) !important;
 }
 
-/* Make sure the inside of navbar does not stay white */
+/* FORCE FULL MENU BAR COLOR */
+.nav,
+header.nav,
+body > header,
 header.nav .container,
-.nav-inner {
-    background: transparent !important;
+header.nav .nav-inner {
+    background: #f6e7b0 !important;
+    background-color: #f6e7b0 !important;
+}
+
+/* Keep menu bar clean */
+header.nav {
+    border-bottom: 1px solid rgba(0,0,0,0.08) !important;
 }
