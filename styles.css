@@ -188,3 +188,35 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.06)
     color: var(--muted)
 }
+
+/* FORCE LIGHT YELLOW BACKGROUND */
+html,
+body {
+    background: #fff8e1 !important;
+}
+
+/* MAKE MAIN PAGE SECTIONS MATCH BACKGROUND */
+.hero,
+section,
+footer {
+    background: #fff8e1 !important;
+}
+
+/* MAKE CHIP MATCH BUTTON STYLE */
+.chip {
+    display: inline-block !important;
+    padding: 10px 16px !important;
+    border-radius: 14px !important;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2)) !important;
+    color: #3a2a00 !important;
+    font-weight: 700 !important;
+    box-shadow: var(--shadow) !important;
+}
+
+/* MAKE OUTLINE BUTTON LOOK LIKE PRIMARY BUTTON */
+.btn-outline {
+    background: linear-gradient(135deg, var(--brand), var(--brand-2)) !important;
+    color: #3a2a00 !important;
+    border: none !important;
+    box-shadow: var(--shadow) !important;
+}
