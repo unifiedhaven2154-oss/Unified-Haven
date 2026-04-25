@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us • Unified Haven</title>
+  <meta name="description" content="Learn about the team behind Unified Haven, a 501(c)(3) nonprofit serving New Jersey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-hero {
+      padding: 72px 28px 48px;
+      text-align: center;
+    }
+
+    .about-hero h2 {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.05;
+      margin: .2em 0 .4em;
+    }
+
+    .about-hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .team-section {
+      padding: 0 28px 72px;
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    .team-section h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 28px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-top: none;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .team-card {
+      background: var(--panel);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .team-card img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 4px rgba(245, 194, 73, .3);
+    }
+
+    .team-card .member-name {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      color: var(--text);
+    }
+
+    .team-card .member-role {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 8px;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #8a5a00;
+      text-decoration: none;
+    }
+
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a id="logo-home" href="index.html">
+        <div class="brand">
+          <img class="logo-img" src="imgs/logo.png" alt="Unified Haven logo" />
+          <h1>Unified Haven</h1>
+        </div>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#involved">Get Involved</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container" style="padding-bottom: 0;">
+    <a class="back-link" href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Home
+    </a>
+  </div>
+
+  <section class="about-hero">
+    <span class="chip">Who We Are</span>
+    <h2>About Unified Haven</h2>
+    <p>We are an official 501(c)(3) nonprofit organization serving the New Jersey community to help those experiencing homelessness.</p>
+  </section>
+
+  <div class="team-section">
+    <h3>Our Team</h3>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="imgs/Raj_photo.jpg" alt="Raj Aasrith Sivalenka" />
+        <p class="member-name">Raj Aasrith Sivalenka</p>
+        <p class="member-role">Co-Founder</p>
+      </div>
+
+      <div class="team-card">
+        <img src="imgs/logo.png" alt="Aryan Patel" />
+        <p class="member-name">Aryan Patel</p>
+        <p class="member-role">Co-Founder</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Unified Haven • Restoring Hope and Stability</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
