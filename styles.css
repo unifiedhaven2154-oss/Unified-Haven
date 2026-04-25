@@ -218,3 +218,19 @@ footer {
     border: none !important;
     box-shadow: var(--shadow) !important;
 }
+
+/* FORCE NAVBAR TO DARKER YELLOW */
+header.nav {
+    background: #f6e7b0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+/* Make sure the inside of navbar does not stay white */
+header.nav .container,
+.nav-inner {
+    background: transparent !important;
+}
+
+git add .
+git commit -m "Change navbar background color"
+git push
