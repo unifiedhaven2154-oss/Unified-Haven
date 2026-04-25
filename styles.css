@@ -1,22 +1,20 @@
 :root {
-    /* THEME tuned to your gold/black logo */
-    --bg: #111214;
-    /* page background */
-    --panel: #171a1f;
-    /* card background */
-    --panel-2: #1c2026;
-    /* softer panel */
-    --text: #faf7f2;
-    /* warm cream text */
-    --muted: #d7cfc4;
-    /* muted sand */
-    --brand: #F5C249;
-    /* primary gold */
-    --brand-2: #FFE29A;
-    /* light gold */
-    --accent: #000000;
-    /* deep black accents */
-    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    /* LIGHT THEME (clean + nonprofit feel) */
+
+    --bg: #f9fafb;
+    --panel: #ffffff;
+    --panel-2: #f4f6f8;
+
+    --text: #1a1a1a;
+    --muted: #6b7280;
+
+    --brand: #f5c249;
+    --brand-2: #ffe29a;
+
+    --accent: #111827;
+
+    --shadow: 0 8px 20px rgba(0,0,0,0.08);
+
     --radius: 18px;
     --radius-lg: 28px;
     --maxw: 1100px;
@@ -32,7 +30,7 @@ body {
     padding: 0;
     background: var(--bg);
     color: var(--text);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 a {
@@ -99,7 +97,7 @@ header.nav {
     position: sticky;
     top: 0;
     backdrop-filter: blur(8px);
-    background: rgba(17, 18, 20, .7);
+    background: rgba(255, 255, 255, 0.85);
     z-index: 10;
     border-bottom: 1px solid rgba(255, 255, 255, .06);
     font-size: larger;
@@ -133,7 +131,7 @@ header.nav {
 
 nav a {
     margin-left: 18px;
-    color: var(--muted)
+    color: #374151;
 }
 
 nav a:hover {
@@ -152,8 +150,8 @@ nav a:hover {
 }
 
 .hero-card {
-    background: linear-gradient(180deg, rgba(245, 194, 73, .12), rgba(0, 0, 0, .12));
-    border: 1px solid rgba(255, 255, 255, .08);
+    background: var(--panel);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-lg);
     padding: 28px;
     box-shadow: var(--shadow)
@@ -179,7 +177,7 @@ nav a:hover {
 
 section {
     padding: 36px 0;
-    border-top: 1px solid rgba(255, 255, 255, .06)
+    border-top: 1px solid rgba(0, 0, 0, 0.06)
 }
 
 section h3 {
@@ -189,6 +187,6 @@ section h3 {
 
 footer {
     padding: 36px 0;
-    border-top: 1px solid rgba(255, 255, 255, .06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06)
     color: var(--muted)
 }
