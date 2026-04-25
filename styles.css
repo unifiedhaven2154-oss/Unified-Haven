@@ -125,17 +125,17 @@ header.nav {
     object-fit: cover
 }
 
-nav a {
+header.nav nav a {
     margin-left: 18px;
     color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    color: var(--brand);
-}
-
-nav a:hover {
-    color: var(--text)
+header.nav nav a:hover {
+    color: #8a5a00;
 }
 
 .hero {
