@@ -253,3 +253,9 @@ header.nav nav a {
 header.nav nav a:hover {
     color: #f5c249 !important;
 }
+
+/* FORCE ALL NAVBAR TEXT TO TRUE BLACK */
+header.nav,
+header.nav * {
+    color: #000000 !important;
+}
