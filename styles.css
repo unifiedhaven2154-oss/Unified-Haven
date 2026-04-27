@@ -125,8 +125,8 @@ a#logo-home:hover {
 .logo-img {
     width: 72px;
     height: 72px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(245, 194, 73, .25);
+    border-radius: 0;
+    box-shadow: none;
     object-fit: cover;
     mix-blend-mode: multiply;
 }
