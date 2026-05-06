@@ -23,7 +23,12 @@
           <h1 id="top">Unified Haven</h1>
         </div>
       </a>
-      <nav aria-label="Primary">
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary">
         <a href="#mission">Mission</a>
         <a href="#programs">Programs</a>
         <a href="#involved">Get Involved</a>
@@ -45,7 +50,7 @@
           <a class="btn btn-primary" href="#involved">Get Involved</a>
         </div>
       </div>
-      <div>
+      <div class="hero-image-wrapper">
         <img src="imgs/sunset-hands.png" alt="Two hands holding each other during a sunset" />
       </div>
     </div>
@@ -86,8 +91,25 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.getElementById('primary-nav');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
 </body>
 
 </html>
